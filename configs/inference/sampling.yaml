@@ -12,5 +12,6 @@ grad_accum_steps: 1
 
 effnet_checkpoint_path: models/effnet_encoder.safetensors
 stage_a_checkpoint_path: models/stage_a.safetensors
-generator_checkpoint_path: finetuned/checkpoints/stage_b_700m_finetuned_rayleigh_cityscapes/generator.safetensors
+#generator_checkpoint_path: finetuned/checkpoints/stage_b_700m_finetuned_rayleigh_cityscapes/generator.safetensors
+generator_checkpoint_path: finetuned/checkpoints/stage_b_700m_finetuned_rayleigh_cityscapes/generator_bf16.safetensors
 
