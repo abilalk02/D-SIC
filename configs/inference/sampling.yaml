@@ -1,0 +1,16 @@
+# GLOBAL STUFF
+model_version: 700M
+dtype: bfloat16
+
+# test dataset path 
+# the dataset is zipped as .tar file. It contains image and text caption pairs (DSIC only considers image embeddings so text captions are empty)
+webdataset_path: file:data/test/without_captions/cityscapes.tar
+
+batch_size: 1
+image_size: 1024
+grad_accum_steps: 1
+
+effnet_checkpoint_path: models/effnet_encoder.safetensors
+stage_a_checkpoint_path: models/stage_a.safetensors
+generator_checkpoint_path: finetuned/checkpoints/stage_b_700m_finetuned_rayleigh_cityscapes/generator.safetensors
+

@@ -1,0 +1,38 @@
+# GLOBAL STUFF
+experiment_id: stage_b_700m_finetuned_rayleigh_cityscapes                 # Last trained model
+checkpoint_path: /users/k/khalidr4/projects/DSIC/finetuned/checkpoints    # For saving checkpoints
+output_path: /users/k/khalidr4/projects/DSIC/finetuned/models
+model_version: 700M
+
+# WandB (for tracking training progress)
+wandb_project: StableCascade
+wandb_entity: abilalk95-aston-university
+
+# TRAINING PARAMS
+lr: 1.0e-4
+batch_size: 4
+image_size: 1024
+# multi_aspect_ratio: [1/1, 1/2, 1/3, 2/3, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 5/6, 9/16]
+shift: 4
+grad_accum_steps: 1
+updates: 10000
+backup_every: 2500
+save_every: 2500
+warmup_updates: 1
+use_fsdp: False
+
+# GDF
+adaptive_loss_weight: True
+
+#ema_start_iters: 5000
+#ema_iters: 100
+#ema_beta: 0.9
+
+# Arrange training data in a .tar file and must contain image and text caption pairs (text captions are ignored by DSIC so we use empty .txt files)
+webdataset_path: file:/users/k/khalidr4/projects/StableCascade/data/train/without_captions/cityscapes.tar
+
+# Load checkpoints
+effnet_checkpoint_path: /users/k/khalidr4/projects/StableCascade/models/effnet_encoder.safetensors
+stage_a_checkpoint_path: /users/k/khalidr4/projects/StableCascade/models/stage_a.safetensors
+generator_checkpoint_path: /users/k/khalidr4/projects/StableCascade/models/stage_b_lite_bf16.safetensors
+

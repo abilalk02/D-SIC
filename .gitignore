@@ -1,0 +1,28 @@
+# Python standard
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+
+# Machine Learning weights & data
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+models/
+checkpoints/
+finetuned/
+data/
+
+# Generated outputs
+output/
+outputs/
+samples/
+*.png
+*.jpg
+*.jpeg
+
+# OS generated files
+.DS_Store
+Thumbs.db
