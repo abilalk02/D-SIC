@@ -12,7 +12,16 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   ```bash
   git clone https://github.com/abilalk02/D-SIC.git
   
-* **GPU:** NVIDIA GPU with at least [X]GB VRAM
+* **Step 2: Setup the Conda environment**
+
+  Create the environment using the provided environment.yml file
+  ```bash
+  # Create the environment from the provided configuration file
+  conda env create -f environment.yml
+
+  # Activate the environment
+  conda activate DSIC
+  
 * **Storage:** ~20GB of free space for model weights
 
 ## 🛠️ Installation & Setup
