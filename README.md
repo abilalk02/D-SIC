@@ -70,4 +70,8 @@ This paper introduces a digital semantic image communication (SIC) framework tha
 ## Training
 
 **To fine-tune the model on a new dataset or different channel conditions, you need to run `python train_dsic.py`**. Note: you will need to modify the dataset path in ```configs/training/train_dsic.yaml``` file. You can also adjust training parameters from the configuration file. You may also wish to change the conditioning or train under different conditions, for which you will need to modify the provided training script.
+
+## Evaluation
+
+You can compute LPIPS, FID, PSNR and SSIM using the provided evaluation scripts, i.e., ```compute_lpips.py```, ```compute_fid.py``` and ```compute_psnr_ssim.py```. You may need to update paths to appropriate directories to run the scripts successfully.
    
