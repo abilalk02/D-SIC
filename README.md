@@ -13,6 +13,7 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   Download the code to your local machine and navigate into the project directory.
   ```bash
   git clone https://github.com/abilalk02/D-SIC.git
+  cd D-SIC
   
 * **Step 2: Set up the Conda environment**
 
