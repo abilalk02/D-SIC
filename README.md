@@ -34,16 +34,40 @@ This paper introduces a digital semantic image communication (SIC) framework tha
       local_dir_use_symlinks=False
   )
   "
+  
+* **Step 4: Download training and test datasets**
+
+  The Cityscapes data can be downloaded from https://huggingface.co/datasets/khalidr4/DSIC-Cityscapes_data or directly from the root https://www.cityscapes-dataset.com/. The train and test datasets should be downloaded and saved as .tar files in the 'data/train/without_captions' and 'data/test/without_captions' folders in the GitHub repository, respectively. D-SIC is trained without text caption conditioning. Thus, the .txt files are empty.
+  ```bash
+  python -c "
+  from huggingface_hub import snapshot_download
+  snapshot_download(
+      repo_id='khalidr4/DSIC-Cityscapes_data', 
+      repo_type='dataset', 
+      local_dir='./data',
+      local_dir_use_symlinks=False
+  )
+  "
 
 * **Step 4: Download training and test datasets**
 
-  Create the environment using the provided environment.yml file
+  The Cityscapes data can be downloaded from https://huggingface.co/datasets/khalidr4/DSIC-Cityscapes_data or directly from the root https://www.cityscapes-dataset.com/. The train and test datasets should be downloaded and saved as .tar files in the 'data/train/without_captions' and 'data/test/without_captions' folders in the GitHub repository, respectively. D-SIC is trained without text caption conditioning. Thus, the .txt files are empty.
   ```bash
-  
+  python -c "
+  from huggingface_hub import snapshot_download
+  snapshot_download(
+      repo_id='khalidr4/DSIC-Cityscapes_data', 
+      repo_type='dataset', 
+      local_dir='./data',
+      local_dir_use_symlinks=False
+  )
+  "  
 
-## 🛠️ Installation & Setup
+## Inference
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
-   cd your-repo-name
+**To test the model using the pretrained checkpoint, simply run ```python sampling.py```**. Note: you may need to modify model and dataset paths in the ```/configs/inference/sampling.yaml``` file. 
+
+## Training
+
+**To fine-tune the model on a new dataset or different channel conditions, you need to run `python train_dsic.py`**. Note: you will need to modify the dataset path in ```configs/training/train_dsic.yaml``` file. You can also adjust training parameters from the configuration file. You may also wish to change the conditioning or train under different conditions, for which you will need to modify the provided training script.
+   
