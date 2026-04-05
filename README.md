@@ -24,25 +24,22 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   
 * **Step 3: Download pretrained model weights**
 
-  The pretrained model weights can be downloaded from https://huggingface.co/khalidr4/DSIC. You can download manually or use the huggingface_hub Python library. You will be able to download two folders i.e. ```bash models and ```bash finetuned . The first folder contains pretrained weights of the relevant stable cascade models. The second folder contains 
+  The pretrained model weights can be downloaded from https://huggingface.co/khalidr4/DSIC. You can download manually or use the ```huggingface_hub``` Python library. You will be able to download two folders i.e. ```models``` and ```finetuned``` . The first folder contains pretrained weights of the relevant stable cascade models. The second folder contains the pretrained D-SIC model weights for the Cityscapes dataset and the Rician channel (can be used for AWGn and Rayleigh channel as well, with minor degradation in performance). All pretrained model weights for all channels and datasets will eventually be accessible via the huggingface repository.
   ```bash
-  # Create the environment from the provided configuration file
-  conda env create -f environment.yml
-
-  # Activate the environment
-  conda activate DSIC
+  python -c "
+  from huggingface_hub import snapshot_download
+  snapshot_download(
+      repo_id='khalidr4/DSIC', 
+      local_dir='./models', 
+      local_dir_use_symlinks=False
+  )
+  "
 
 * **Step 4: Download training and test datasets**
 
   Create the environment using the provided environment.yml file
   ```bash
-  # Create the environment from the provided configuration file
-  conda env create -f environment.yml
-
-  # Activate the environment
-  conda activate DSIC
-
-
+  
 
 ## 🛠️ Installation & Setup
 
