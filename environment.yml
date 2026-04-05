@@ -29,6 +29,7 @@ dependencies:
     - h5py==3.11.0
     - scipy==1.14.1
     - wandb==0.18.7
+    - plotly==5.24.1
     - tqdm==4.67.0
     - lpips==0.1.4
     - pytorch-fid==0.3.0
