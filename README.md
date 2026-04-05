@@ -32,7 +32,7 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   from huggingface_hub import snapshot_download
   snapshot_download(
       repo_id='khalidr4/DSIC', 
-      local_dir='./models', 
+      local_dir='.', 
       local_dir_use_symlinks=False
   )
   "
@@ -46,7 +46,7 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   snapshot_download(
       repo_id='khalidr4/DSIC-Cityscapes_data', 
       repo_type='dataset', 
-      local_dir='./data',
+      local_dir='.',
       local_dir_use_symlinks=False
   )
   "

@@ -20,6 +20,14 @@ dependencies:
     - opencv-python==4.10.0.84
     - pillow==11.0.0
     - numpy==1.26.4
+    - matplotlib==3.10.1
+    - ipython==8.29.0
+    - munch==4.0.0
+    - insightface==0.7.3
+    - onnxruntime==1.16.3
+    - onnx2torch==1.5.13
     - scipy==1.14.1
     - wandb==0.18.7
     - tqdm==4.67.0
+    - git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
+    - git+https://github.com/pabloppp/pytorch-tools.git
