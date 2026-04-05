@@ -127,7 +127,7 @@ class WurstCore(TrainingCore, DataCore, WarpCore):
                         effnet_embeddings[rand_idx] = models.effnet(extras.effnet_preprocess(effnet_images[rand_idx]))
                     
                     # Load the normalization factors that were obtained from the dataset used to train the denoiser model
-                    with open("configs/normalization_stats.json", "r") as f:
+                    with open("configs/normalization_factors.json", "r") as f:
                         stats = json.load(f)
 
                      # Random value of SNR between 0 and 20 during training (can be trained at a specific SNR to improve performance)
