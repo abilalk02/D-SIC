@@ -7,6 +7,7 @@ This paper introduces a digital semantic image communication (SIC) framework tha
 
 ## 💻 Installation
 * **Step 1: Clone the directory**
+  
   Download the code to your local machine and navigate into the project directory.
   ```bash
   git clone https://github.com/abilalk02/D-SIC.git
