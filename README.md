@@ -81,4 +81,28 @@ You can compute LPIPS, FID, PSNR and SSIM using the provided evaluation scripts,
 
 * Upload trained model weights for AWGN and Rayleigh channels on HuggingFace for Cityscapes. (Note: The pretrained model currently accessible on HuggingFace was trained on Rician channels. It can be used for AWGN and Rayleigh channels also with only a slight degradation in performance)
 * Upload trained model weights for the DIV2K dataset
+
+## Citation
+
+Please cite using the following BibTex entry if you use or modify this code for any purposes. 
+```bash
+@article{
+doi:10.36227/techrxiv.174742855.56319480/v2,
+author = {Bilal Khalid  and Jaroslaw E Prilepsky  and Sergei K Turitsyn  and Pedro Freire },
+title = {D-SIC: Energy-Efficient Digital Semantic Image Communication via Large Generative Models},
+journal = {TechRxiv},
+volume = {2025},
+number = {1118},
+pages = {},
+year = {2025},
+doi = {10.36227/techrxiv.174742855.56319480/v2},
+URL = {https://www.techrxiv.org/doi/abs/10.36227/techrxiv.174742855.56319480/v2},
+eprint = {https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.174742855.56319480/v2},
+}
+
+## Acknowledgments
+
+* Stable Cascade (https://github.com/Stability-AI/StableCascade)
+
+
    
