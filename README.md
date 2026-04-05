@@ -12,7 +12,7 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   ```bash
   git clone https://github.com/abilalk02/D-SIC.git
   
-* **Step 2: Setup the Conda environment**
+* **Step 2: Set up the Conda environment**
 
   Create the environment using the provided environment.yml file
   ```bash
@@ -22,7 +22,27 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   # Activate the environment
   conda activate DSIC
   
-* **Storage:** ~20GB of free space for model weights
+* **Step 3: Download pretrained model weights**
+
+  The pretrained model weights can be downloaded from https://huggingface.co/khalidr4/DSIC. You can download manually or use the huggingface_hub Python library. You will be able to download two folders i.e. ```bash models and ```bash finetuned . The first folder contains pretrained weights of the relevant stable cascade models. The second folder contains 
+  ```bash
+  # Create the environment from the provided configuration file
+  conda env create -f environment.yml
+
+  # Activate the environment
+  conda activate DSIC
+
+* **Step 4: Download training and test datasets**
+
+  Create the environment using the provided environment.yml file
+  ```bash
+  # Create the environment from the provided configuration file
+  conda env create -f environment.yml
+
+  # Activate the environment
+  conda activate DSIC
+
+
 
 ## 🛠️ Installation & Setup
 
