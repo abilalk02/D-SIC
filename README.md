@@ -51,20 +51,6 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   )
   "
 
-* **Step 4: Download training and test datasets**
-
-  The Cityscapes data can be downloaded from https://huggingface.co/datasets/khalidr4/DSIC-Cityscapes_data or directly from the root https://www.cityscapes-dataset.com/. The train and test datasets should be downloaded and saved as .tar files in the 'data/train/without_captions' and 'data/test/without_captions' folders in the GitHub repository, respectively. D-SIC is trained without text caption conditioning. Thus, the .txt files are empty.
-  ```bash
-  python -c "
-  from huggingface_hub import snapshot_download
-  snapshot_download(
-      repo_id='khalidr4/DSIC-Cityscapes_data', 
-      repo_type='dataset', 
-      local_dir='./data',
-      local_dir_use_symlinks=False
-  )
-  "  
-
 ## Inference
 
 **To test the model using the pretrained checkpoint, simply run ```python sampling.py```**. Note: you may need to modify model and dataset paths in the ```/configs/inference/sampling.yaml``` file. 
