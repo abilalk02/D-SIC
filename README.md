@@ -26,7 +26,7 @@ This paper introduces a digital semantic image communication (SIC) framework tha
   
 * **Step 3: Download pretrained model weights**
 
-  The pretrained model weights can be downloaded from https://huggingface.co/khalidr4/DSIC. You can download manually or use the ```huggingface_hub``` Python library. You will be able to download two folders i.e. ```models``` and ```finetuned``` . The first folder contains pretrained weights of the relevant stable cascade models. The second folder contains the pretrained D-SIC model weights for the Cityscapes dataset and the Rician channel (can be used for AWGn and Rayleigh channel as well, with minor degradation in performance). All pretrained model weights for all channels and datasets will eventually be accessible via the huggingface repository.
+  The pretrained model weights can be downloaded from https://huggingface.co/khalidr4/DSIC. You can download manually or use the ```huggingface_hub``` Python library. You will be able to download two folders i.e. ```models``` and ```finetuned``` . The first folder contains pretrained weights of the relevant stable cascade models. The second folder contains the pretrained D-SIC model weights for the Cityscapes dataset and the Rician channel (can also be used for AWGn and Rayleigh channels, with minor performance degradation). All pretrained model weights for all channels and datasets will eventually be accessible via the HuggingFace repository.
   ```bash
   python -c "
   from huggingface_hub import snapshot_download
@@ -75,5 +75,10 @@ This paper introduces a digital semantic image communication (SIC) framework tha
 
 ## Evaluation
 
-You can compute LPIPS, FID, PSNR and SSIM using the provided evaluation scripts, i.e., ```compute_lpips.py```, ```compute_fid.py``` and ```compute_psnr_ssim.py```. You may need to update paths to appropriate directories to run the scripts successfully.
+You can compute LPIPS, FID, PSNR and SSIM using the provided evaluation scripts, i.e., ```compute_lpips.py```, ```compute_fid.py``` and ```compute_psnr_ssim.py```. You may need to update paths to the appropriate directories to run the scripts successfully.
+
+## TO-DO List
+
+* Upload trained model weights for AWGN and Rayleigh channels on HuggingFace for Cityscapes. (Note: The pretrained model currently accessible on HuggingFace was trained on Rician channels. It can be used for AWGN and Rayleigh channels also with only a slight degradation in performance)
+* Upload trained model weights for the DIV2K dataset
    
