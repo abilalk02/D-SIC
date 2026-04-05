@@ -5,8 +5,8 @@ output_path: finetuned/models
 model_version: 700M
 
 # WandB (for tracking training progress)
-wandb_project: StableCascade
-wandb_entity: abilalk95-aston-university
+wandb_project: # Add your project name
+wandb_entity: # Add your WandB account details
 
 # TRAINING PARAMS
 lr: 1.0e-4
