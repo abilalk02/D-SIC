@@ -1,4 +1,3 @@
-# Normalization factors obtained from the dataset used to train the denoiser model
 {
     "noisy_min": -13.0,
     "noisy_max": 13.0,
