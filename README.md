@@ -1,11 +1,11 @@
 # D-SIC: Energy-Efficient Digital Semantic Image Communication via Large Generative Models
 
-This is the code used to obtain the results for the paper titled "D-SIC: Energy-Efficient Digital Semantic Image Communication via Large Generative Models". Much of the code in this repository is based on Stable Cascade (https://github.com/Stability-AI/StableCascade).  
+This repository contains the code for the paper titled "D-SIC: Energy-Efficient Digital Semantic Image Communication via Large Generative Models". Much of the code in this repository is based on Stable Cascade (https://github.com/Stability-AI/StableCascade).  
 
 ## 🌟 Overview
-[Provide 2-3 sentences explaining exactly what your modification does. E.g., "This repository optimizes the Stage C inference loop to reduce VRAM consumption by 20% while maintaining image fidelity."]
+This paper introduces a digital semantic image communication (SIC) framework that incorporates Stable Cascade (SC) to achieve the goal of reliable, efficient and digitally compatible SIC. The architecture of SC is extensively modified to mitigate channel-induced distortions using Channel State Information (CSI) and corrupted image embeddings as conditioning.
 
-## 💻 Hardware Requirements
+## 💻 Installation
 * **OS:** Linux or Windows (WSL recommended)
 * **GPU:** NVIDIA GPU with at least [X]GB VRAM
 * **Storage:** ~20GB of free space for model weights
