@@ -26,7 +26,7 @@ with open(config_file, "r", encoding="utf-8") as file:
     config_file = yaml.safe_load(file)
 
 # Load the normalization factors that were obtained from the dataset used to train the denoiser model
-with open("configs/normalization_stats.json", "r") as f:
+with open("configs/normalization_factors.json", "r") as f:
     stats = json.load(f)
 
 # Setup models (Effnet and Finetuned Stage B), data and pre-processors
