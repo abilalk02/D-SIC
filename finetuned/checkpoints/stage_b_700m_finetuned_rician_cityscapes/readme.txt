@@ -1,1 +1,0 @@
-Download finetuned checkpoint from https://huggingface.co/khalidr4/DSIC and place in this folder
