@@ -376,7 +376,7 @@ class WurstCore(TrainingCore, DataCore, WarpCore):
 if __name__ == '__main__':
     print("Launching Script")
     warpcore = WurstCore(
-        config_file_path=sys.argv[1] if len(sys.argv) > 1 else 'configs/training/finetune_stage_b.yaml',
+        config_file_path=sys.argv[1] if len(sys.argv) > 1 else 'configs/training/train_dsic.yaml',
         device=torch.device(int(os.environ.get("SLURM_LOCALID", 0)))
         #device=torch.device(int(os.environ.get("LOCAL_RANK", 0)))
         #device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
