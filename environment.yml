@@ -26,6 +26,7 @@ dependencies:
     - insightface==0.7.3
     - onnxruntime==1.16.3
     - onnx2torch==1.5.13
+    - h5py==3.11.0
     - scipy==1.14.1
     - wandb==0.18.7
     - tqdm==4.67.0
