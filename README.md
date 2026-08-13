@@ -78,17 +78,15 @@ You can compute LPIPS, FID, PSNR and SSIM using the provided evaluation scripts,
 
 Please cite using the following BibTex entry if you use or modify this code for any purposes. 
 ```bash
-  @article{
-  doi:10.36227/techrxiv.174742855.56319480/v2,
-  author = {Bilal Khalid  and Jaroslaw E Prilepsky  and Sergei K Turitsyn  and Pedro Freire },
-  title = {D-SIC: Energy-Efficient Digital Semantic Image Communication via Large Generative Models},
-  journal = {TechRxiv},
-  volume = {2025},
-  number = {1118},
-  pages = {},
-  year = {2025},
-  doi = {10.36227/techrxiv.174742855.56319480/v2},
-  URL = {https://www.techrxiv.org/doi/abs/10.36227/techrxiv.174742855.56319480/v2},
-  eprint = {https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.174742855.56319480/v2},
-  }
+  @ARTICLE{11574682,
+  author={Khalid, Bilal and Prilepsky, Jaroslaw E. and Turitsyn, Sergei K. and Freire, Pedro},
+  journal={IEEE Transactions on Cognitive Communications and Networking}, 
+  title={D-SIC: Energy-Efficient Digital Semantic Image Communication via Large Generative Models}, 
+  year={2026},
+  volume={12},
+  number={},
+  pages={9114-9129},
+  keywords={Modeling;Quantization (signal);Silicon carbide;Signal to noise ratio;Training;Codes;Encoding;Parity check codes;Channel coding;Semantic communication;Semantic communication;large AI model;image transmission;generative AI;diffusion model},
+  doi={10.1109/TCCN.2026.3706089}}
+
 
